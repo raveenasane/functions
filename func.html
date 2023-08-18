@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        var a=20;
+        console.log(a);
+        function func(){
+            var x=10;
+            console.log(x);
+            console.log(a);
+        }
+    </script>
+    <button onclick=func()>Click Here</button> -->
+<!-- callbyvalue -->
+    <!-- <script>
+        function func(){
+           var a=10,b=20;
+           console.log("before calling function: "+a,b);
+           callByValue(a,b);
+           console.log("after calling function: "+a,b);
+        }
+        function callByValue(newa,newb){
+            console.log("new function"+newa,newb)
+            newa=0;
+            newb=0;
+            console.log("newa="+newa,"newb="+newb);
+        }
+    </script> -->
+<!-- callbyreference -->
+    <script>
+        function func(){
+            var obj={a:100};
+            console.log("before: "+obj.a);
+            callByReference(obj);
+            console.log("after: "+obj.a);
+        }
+        function callByReference(newa){
+            console.log("inside function: "+newa.a);
+            newa.a=2;
+            console.log("newa:"+newa.a);
+        }
+    </script>
+    <button onclick=func()>Click</button>
+</body>
+</html>
